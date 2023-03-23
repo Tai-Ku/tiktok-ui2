@@ -4,10 +4,11 @@
 :root{
     --primary: #fe2c55;
     --black:#000;
-    --text-color:#333;
+    --text-color:#161823;
     --white: #fff;
     --default-layout-header-height:60px;
     --default-layout-width:1150px;
+    --default-layout-horizontal-spacer: 24px
 }
 *{
     box-sizing: border-box;
@@ -24,6 +25,7 @@ body {
     text-rendering: optimizeSpeed;
     color: var(--text-color);
 
+
 }
 
 button,input , [tabindex] {
@@ -34,4 +36,21 @@ button,input , [tabindex] {
 a[href] {
     color: var(--text-color);
     text-decoration: none;
+}
+// Custom Tippy
+body {
+    .tippy-box{
+        background-color: rgba(84, 84, 84, 0.92);
+        border-radius: 8px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 1.5;
+        border-radius: 8px;
+    }
+    .tippy-arrow{
+        color:rgba(84, 84, 84, 0.92);
+    }
+    .tippy-box[data-placement^=bottom]>.tippy-arrow {
+        top: -1px;
+    }
 }
