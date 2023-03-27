@@ -1,5 +1,5 @@
-const imgaes = {
-  logo: require('~/assets/images/logo.svg').default,
+const images = {
+  noImage: require('~/assets/images/imageonline-co-placeholder-image (1).png'),
 };
 
-export default imgaes;
+export default images;
